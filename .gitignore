@@ -1,0 +1,117 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.eggs/
+
+# Large binary files / model weights
+models/
+**/models/
+*.pt
+*.pth
+*.onnx
+*.pkl
+
+# Data (too large for git)
+data/
+**/data/
+
+# Colab training data + weights (too large), but keep the training script
+colab_training/*
+**/colab_training/*
+!**/colab_training/train_segformer.py
+!**/colab_training/README.md
+
+# Archive (18GB of old experiments)
+_archive/
+**/_archive/
+
+# Geospatial caches & rasters
+*.tif
+*.tiff
+*.geotiff
+*.npz
+rmn_cache.npz
+
+# Vermessungsberichte (building plans, large PDFs/images)
+Vermessungsberichte/
+**/Vermessungsberichte/
+
+# RoofMapNet (separate repo / large pretrained weights)
+RoofMapNet/
+**/RoofMapNet/
+
+# Validation outputs (regenerierbar — DOP-Bilder zeigen reale Häuser, Datenschutz)
+results/validation/
+**/results/validation/
+
+# Ground-Truth Bauplan-PDFs
+**/Ground Truth*/
+**/ground_truth*/
+
+# Course material / proprietary content
+**/More/
+
+# Report (written document is not part of the public repo)
+**/Report/
+**/report.tex
+**/report.docx
+**/Old/
+
+# LaTeX-Build-Artefakte
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.bbl
+*.blg
+
+# Word lock-files
+~$*.docx
+**/~$*
+
+# Local-only iCloud sync artifacts
+.icloud
+*.icloud
+
+# Binary cache (regeneratable)
+*.npy
+
+# Backup files (history tracked via git commits)
+*_BACKUP_*.py
+*_BEFORE_*.py
+*_v_cornerclip.py
+*_v2_exactlines.py
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Claude Code
+.claude/
+
+# Environment
+.env
+*.log
+
+# Local site coordinates of private validation buildings
+automatic-detection/sites.local.json
+
+# Personal notes, application material and course documents
+shared/cdtm/
+shared/notes/
+**/REPORT_OUTLINE.md

@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+.env
+.env.local
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Node
+node_modules/
+.next/
+dist/
+build/
+*.log
+.pnpm-debug.log*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+.DS_Store
+
+# Data / Caches
+data/cache/
+data/tiles/
+*.tif
+*.tiff
+*.npz
+*.geojson.gz
+
+# Secrets
+*.pem
+*.key
+.env*
+!.env.example

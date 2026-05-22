@@ -1,0 +1,36 @@
+@import "tailwindcss";
+
+/* Drawing-Modus: feines Fadenkreuz für pixel-genaues Klicken,
+   überschreibt Leaflets default grab/grabbing-Cursor. */
+.leaflet-container.drawing-mode,
+.leaflet-container.drawing-mode .leaflet-interactive,
+.leaflet-container.drawing-mode .leaflet-tile,
+.leaflet-container.drawing-mode .leaflet-overlay-pane {
+  cursor: crosshair !important;
+}
+.leaflet-container.drawing-mode.leaflet-dragging {
+  cursor: grabbing !important;
+}
+
+:root {
+  --background: #fafaf9;
+  --foreground: #1c1917;
+  --accent: #d97706;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+}
+
+html,
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+}
+
+.maplibregl-canvas {
+  outline: none;
+}

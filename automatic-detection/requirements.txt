@@ -1,0 +1,9 @@
+numpy>=1.26
+scipy>=1.11
+scikit-learn>=1.4
+matplotlib>=3.8
+pandas>=2.1
+rasterio>=1.3        # for loading real Vaihingen GeoTIFF tiles
+geopandas>=0.14      # optional, for spatial analysis extensions
+shapely>=2.0         # geometry operations
+pillow>=10.0         # image I/O fallback
